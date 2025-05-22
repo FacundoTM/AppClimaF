@@ -42,9 +42,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="flex w-full flex-col lg:flex-row p-5 h-220">
-        <div className="card bg-base-300 rounded-box grid h-full grow place-items-center p-5">
-          <div>
+      <div className="flex w-full flex-col lg:flex-row h-220">
+        <div className="card bg-base-300 rounded-box grid h-full grow place-items-center">
+          <div className="text-center">
             <Search setClima={setClimaAct} />
             <Card clima={climaAct} />
           </div>

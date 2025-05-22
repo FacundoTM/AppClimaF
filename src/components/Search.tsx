@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 
 function Search({ setClima }: any) {
-  const [query, setQuery] = useState(""); // Guardamos la busqueda en un estado, por defecto será "San Miguel".
+  const [query, setQuery] = useState("");
 
   const handleSubmit = async (e: any) => {
     // Prevenimos el evento por defecto para poder controlar lo que se escribe en el input.
@@ -21,7 +21,7 @@ function Search({ setClima }: any) {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <label className="input w-full">
+        <label className="input w-fit">
           <svg
             className="h-[1em] opacity-50"
             xmlns="http://www.w3.org/2000/svg"

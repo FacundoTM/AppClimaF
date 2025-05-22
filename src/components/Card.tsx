@@ -10,7 +10,7 @@ function Card({ clima }: any) {
 
   return (
     <div>
-      <div className="card bg-base-100 w-96 shadow-sm mt-5 text-center">
+      <div className="card bg-base-100 w-96 shadow-sm mt-5 text-center w-full">
         <h1 className="text-[20px] font-bold pt-5">
           {_pais || (
             <span className="loading loading-spinner loading-xs"></span>
