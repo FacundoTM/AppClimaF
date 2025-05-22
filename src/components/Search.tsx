@@ -8,7 +8,7 @@ function Search({ setClima }: any) {
     // Prevenimos el evento por defecto para poder controlar lo que se escribe en el input.
     e.preventDefault();
     try {
-      const url = "http://localhost:3000/consultarClima"; // Seteamos la URL de la API.
+      const url = "https://appclimab.onrender.com/consultarClima"; // Seteamos la URL de la API.
       const body = { ciudad: query }; // Le enviamos la ciudad por el body.
 
       const response = await axios.post(url, body); // Enviamos la petición POST.
