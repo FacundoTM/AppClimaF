@@ -46,6 +46,7 @@ function Search({ setClima }: any) {
             onChange={(e) => setQuery(e.target.value)}
           />
         </label>
+        <button className="btn btn-soft btn-primary ml-2">Ver clima</button>
       </form>
     </>
   );
