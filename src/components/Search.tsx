@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 
 function Search({ setClima }: any) {
-  const [query, setQuery] = useState("San Miguel, Buenos Aires"); // Guardamos la busqueda en un estado, por defecto será "San Miguel".
+  const [query, setQuery] = useState(""); // Guardamos la busqueda en un estado, por defecto será "San Miguel".
 
   const handleSubmit = async (e: any) => {
     // Prevenimos el evento por defecto para poder controlar lo que se escribe en el input.
