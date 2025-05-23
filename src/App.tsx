@@ -16,13 +16,8 @@ function App() {
 
   // Hacemos la petición del clima actual hacia nuestra API.
   async function consultarClimaActual(ciudad: string) {
-    const params = {
-      ciudad: ciudad,
-    };
-
-    const response = await axios.post(
-      `https://appclimab.onrender.com/consultarClima`,
-      params
+    const response = await axios.get(
+      `https://appclimab.onrender.com/clima/${ciudad}`
     );
 
     return response;

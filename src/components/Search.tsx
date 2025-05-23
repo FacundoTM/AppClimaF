@@ -8,10 +8,9 @@ function Search({ setClima }: any) {
     // Prevenimos el evento por defecto para poder controlar lo que se escribe en el input.
     e.preventDefault();
     try {
-      const url = "https://appclimab.onrender.com/consultarClima"; // Seteamos la URL de la API.
-      const body = { ciudad: query }; // Le enviamos la ciudad por el body.
-
-      const response = await axios.post(url, body); // Enviamos la petición POST.
+      const response = await axios.get(
+        `https://appclimab.onrender.com/clima/${query}`
+      ); // Enviamos la petición GET.
       setClima(response); // Seteamos la "respuesta" de la petición en climaAct que está definido en App.tsx
     } catch (error) {
       console.error(error); // En caso de error lo controlamos y lo imprimimos por consola.
